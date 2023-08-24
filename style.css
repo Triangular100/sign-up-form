@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face {
     font-family: 'norsebold';
     src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
@@ -12,25 +6,155 @@
     font-style: normal;
 }
 
-.page {
-    display: flex;
-    height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-img {
-    height: 50px;
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+input,
+button {
+    border: none;
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #db9f5c;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffdcb5;
+}
+
+a:active {
+    color: #db9f5c;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
 
 .image-section {
-    flex: 1 1 0;
+    flex: 1 0 18rem;
+    min-height: 13rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
     background: bottom / cover no-repeat url(images/night-sky.jpg);
-    color: white;
 }
 
 .image-section .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FFFFFF22;
+}
+
+.image-section .banner img {
+    height: 4rem;
+}
+
+.image-section .banner>p {
     font: 4rem norsebold;
+    color: white;
+}
+
+.image-section>p {
+    position: absolute;
+    bottom: 0;
+    padding: 0.5rem;
+    color: white;
 }
 
 .sign-up-section {
-    flex: 1 1 0;
+    flex: 3 0 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0f0f0f;
+    color: white;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.sign-up-section p {
+    padding: 0 2rem;
+    max-width: 68ch;
+}
+
+.sign-up-section .inputs-container {
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    box-shadow: 3px 2px 3px #FFFFFF33;
+}
+
+.sign-up-section .inputs-container .input-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 68ch;
+}
+
+.sign-up-section .inputs-container .input-row .input-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.sign-up-section form input {
+    width: 100%;
+    min-width: 11rem;
+    background-color: #0f0f0f;
+    border-radius: 5px;
+    border: 1px solid #0f0f0f;
+    border-bottom: 1px solid #AAAAAA;
+    color: white;
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 1.7rem;
+}
+
+.sign-up-section form input:focus {
+    border: 1px solid #db9f5c;
+}
+
+.sign-up-section form label {
+    position: relative;
+    text-transform: uppercase;
+}
+
+.sign-up-section form button {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding: 0.4rem 2rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    border: 3px solid #db9f5c;
+    background-color: #0f0f0f;
+    color: #db9f5c;
+    font-weight: 600;
+}
+
+.sign-up-section form button:hover {
+    border: 3px solid #ffdcb5;
+    color: #ffdcb5;
+}
+
+.sign-up-section form button:active {
+    border: 3px solid #db9f5c;
+    color: #db9f5c;
 }
