@@ -10,7 +10,58 @@
 </head>
 
 <body>
-    <h1>Sign up form</h1>
+    <div class="page">
+        <div class="image-section">
+            <div class="banner">
+                <img src="images/odin-lined.png" alt="Odin head">
+                <p>Odin</p>
+            </div>
+            <p class="image-credit">Photo by <a href="https://unsplash.com/@mahkeo" target="_blank">mahkeo</a> on <a
+                    href="https://unsplash.com/photos/rpVQJbZMw8o" target="_blank">Unsplash</a>.</p>
+        </div>
+        <div class="sign-up-section">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+            <p>Let's do this!</p>
+            <form action="#" method="post">
+                <div class="inputs-container">
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="first_name">First name</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="last_name">Last name</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="phone_number">Phone number</label>
+                            <input type="tel" id="phone_number" name="phone_number">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" id="confirm_password" name="confirm_password" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <p class="log-in-section">Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
 </body>
 
 </html>
